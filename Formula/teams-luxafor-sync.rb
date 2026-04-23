@@ -6,7 +6,7 @@ class TeamsLuxaforSync < Formula
 
   on_arm do
     url "https://github.com/jonasrappy/teams-luxafor-presence-sync/releases/download/v0.2.0/teams-luxafor-sync_darwin_arm64.tar.gz"
-    sha256 "fcbfefbd3b680c87ea26c1ab730cfb0616f1e599be8693fd7f4cb13e877e4e10"
+    sha256 "3f4fb8f8929a6693578c6808c69b923147d730f091244c97da68c4331996ffbc"
   end
 
   on_intel do
