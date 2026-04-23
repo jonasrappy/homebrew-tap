@@ -1,16 +1,16 @@
 class TeamsLuxaforSync < Formula
   desc "Sync Luxafor LED color with Microsoft Teams presence on macOS"
   homepage "https://github.com/jonasrappy/teams-luxafor-presence-sync"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/jonasrappy/teams-luxafor-presence-sync/releases/download/v0.2.2/teams-luxafor-sync_darwin_arm64.tar.gz"
-    sha256 "a4aedde7e8051a9e5783fc959daabffd0d05b3311992da923ab98dafd101d858"
+    url "https://github.com/jonasrappy/teams-luxafor-presence-sync/releases/download/v0.2.3/teams-luxafor-sync_darwin_arm64.tar.gz"
+    sha256 "625625dc56986e82cbd22d71275f867618bb2a6197cbe4d0b57a09962f97568c"
   else
-    url "https://github.com/jonasrappy/teams-luxafor-presence-sync/releases/download/v0.2.2/teams-luxafor-sync_darwin_amd64.tar.gz"
-    sha256 "6ea3a6e0f56dc1269af39e768789f53a15a0f058da05c1f18dbdbdfceb73bed8"
+    url "https://github.com/jonasrappy/teams-luxafor-presence-sync/releases/download/v0.2.3/teams-luxafor-sync_darwin_amd64.tar.gz"
+    sha256 "d5fa6542d6132c3e7a06b4eef700e2e09c5006030feb9cce67e77f7ffeca4845"
   end
 
   def install
