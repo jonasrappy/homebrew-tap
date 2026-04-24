@@ -1,16 +1,16 @@
 class TeamsLuxaforSync < Formula
   desc "Sync Luxafor LED color with Microsoft Teams presence on macOS"
   homepage "https://github.com/jonasrappy/teams-luxafor-presence-sync"
-  version "0.2.3"
+  version "0.2.4"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/jonasrappy/teams-luxafor-presence-sync/releases/download/v0.2.3/teams-luxafor-sync_darwin_arm64.tar.gz"
-    sha256 "625625dc56986e82cbd22d71275f867618bb2a6197cbe4d0b57a09962f97568c"
+    url "https://github.com/jonasrappy/teams-luxafor-presence-sync/releases/download/v0.2.4/teams-luxafor-sync_darwin_arm64.tar.gz"
+    sha256 "750dfb6306b83e08c0bc7e52d1783708344155d745508332bdccb3dd264b218d"
   else
-    url "https://github.com/jonasrappy/teams-luxafor-presence-sync/releases/download/v0.2.3/teams-luxafor-sync_darwin_amd64.tar.gz"
-    sha256 "d5fa6542d6132c3e7a06b4eef700e2e09c5006030feb9cce67e77f7ffeca4845"
+    url "https://github.com/jonasrappy/teams-luxafor-presence-sync/releases/download/v0.2.4/teams-luxafor-sync_darwin_amd64.tar.gz"
+    sha256 "4f8041191e2b79b11a47cfc97048430368371244df77c77fb133c581a7407e24"
   end
 
   def install
@@ -27,7 +27,7 @@ class TeamsLuxaforSync < Formula
     log_path var/"log/teams-luxafor-sync.log"
     error_log_path var/"log/teams-luxafor-sync-error.log"
     environment_variables(
-      POLL_MS:                 "3000",
+      POLL_MS:                 "300",
       TAIL_BYTES:              "262144",
       FALLBACK_LOG_SCAN_COUNT: "5",
       REAPPLY_MS:              "15000",
